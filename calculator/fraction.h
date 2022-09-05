@@ -1,18 +1,19 @@
 #pragma once
 #include <iostream>
-#include <cmath>
-class fraction
+
+class Fraction
 {
 public:
-	fraction(int numeratorand, int denominator);
-	fraction() {};
-	~fraction();
+	Fraction(int numeratorand = 0, int denominator = 1) :
+	m_numeratorand(numeratorand), m_denominator(denominator){}
+
+	~Fraction() = default;
 public:
-	friend fraction operator +(const fraction&, const fraction&);
-	friend fraction operator -(const fraction&, const fraction&);
-	friend fraction operator *(const fraction&, const fraction&);
-	friend fraction operator /(const fraction&, const fraction&);
-    friend std::ostream& operator <<(std::ostream&, const fraction&);
+	friend Fraction operator +(const Fraction&, const Fraction&);
+	friend Fraction operator -(const Fraction&, const Fraction&);
+	friend Fraction operator *(const Fraction&, const Fraction&);
+	friend Fraction operator /(const Fraction&, const Fraction&);
+    friend std::ostream& operator <<(std::ostream&, const Fraction&);
 public:
     void reduction();
 public:

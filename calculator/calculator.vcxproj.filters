@@ -18,12 +18,12 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="fraction.cpp">
+    <ClCompile Include="Fraction.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="fraction.h">
+    <ClInclude Include="Fraction.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
