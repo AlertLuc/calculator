@@ -27,6 +27,7 @@ void fraction::reduction()
 		m_denominator = m_denominator / reduce;
 		if (m_denominator < 0) {m_denominator = -m_denominator;m_numeratorand = -m_numeratorand;}
 		if (m_denominator != 1) { std::cout << m_numeratorand << "/" << m_denominator << std::endl;}
+        if(abs(m_numeratorand) == abs(m_denominator)) { std::cout <<"1"<< std::endl;}
 	}
 	else if(m_denominator == 1){std::cout << m_numeratorand << std::endl;}
 	else{std::cout << "0" << std::endl;}
